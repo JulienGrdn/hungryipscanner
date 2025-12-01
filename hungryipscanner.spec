@@ -35,7 +35,7 @@ install -m 0755 hungryip.py %{buildroot}%{_bindir}/hungryipscanner
 
 # 2. Install the Desktop Entry
 mkdir -p %{buildroot}%{_datadir}/applications
-install -m 0644 com.github.juliengrdn.hungryipscanner.desktop %{buildroot}%{_datadir}/applications/
+install -m 0755 com.github.juliengrdn.hungryipscanner.desktop %{buildroot}%{_datadir}/applications/
 
 # 3. Install the Icon
 mkdir -p %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
