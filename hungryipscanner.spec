@@ -22,7 +22,7 @@ network. It provides a GUI built with GTK 4 and Libadwaita to display active
 hosts on the network.
 
 %prep
-%autosetup -n hungryipscanner-main
+%autosetup -n hungryip-main
 
 %build
 # Nothing to build for pure Python
