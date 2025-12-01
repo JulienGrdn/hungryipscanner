@@ -1,4 +1,4 @@
-Name:           Hungry IP Scanner
+Name:           hungryipscanner
 Version:        1.0
 Release:        1%{?dist}
 Summary:        A simple utility for scanning IP addresses over the local network
