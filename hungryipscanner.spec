@@ -27,7 +27,12 @@ hosts on the network.
 # Nothing to build, just python scripts
 
 %install
-%make_install
+mkdir -p %{buildroot}%{_bindir}
+install -m 0755 hungryipscanner.py %{buildroot}%{_bindir}/hungryipscanner
+mkdir -p %{buildroot}%{_datadir}/applications
+install -m 0644 com.github.juliengrdn.hungryipscanner.desktop %{buildroot}%{_datadir}/applications/
+mkdir -p %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
+instal
 
 %files
 %license LICENSE
