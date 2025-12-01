@@ -30,7 +30,7 @@ hosts on the network.
 %install
 # 1. Install the main script with EXECUTABLE permissions (This fixes your error)
 mkdir -p %{buildroot}%{_bindir}
-install -m 0755 hungryip.py %{buildroot}%{_bindir}/hungryipscanner
+install -m 0755 hungryipscanner.py %{buildroot}%{_bindir}/hungryipscanner
 
 # 2. Install the icon
 # We verify the source filename is 'hungryipscannerlogo.svg' and rename it to standard 'hungryipscanner.svg'
