@@ -22,7 +22,7 @@ network. It provides a GUI built with GTK 4 and Libadwaita to display active
 hosts on the network.
 
 %prep
-%autosetup -n hungryip-main
+%autosetup -n hungryipscanner-main
 
 %build
 # Nothing to build for pure Python
@@ -31,7 +31,7 @@ hosts on the network.
 # 1. Install the main python script to /usr/bin/
 mkdir -p %{buildroot}%{_bindir}
 # Note: Ensure the script name below matches your file in the repo (e.g., hungryipscanner.py)
-install -m 0755 hungryipscanner.py %{buildroot}%{_bindir}/hungryipscanner
+install -m 0755 hungryip.py %{buildroot}%{_bindir}/hungryipscanner
 
 # 2. Install the Desktop Entry
 mkdir -p %{buildroot}%{_datadir}/applications
