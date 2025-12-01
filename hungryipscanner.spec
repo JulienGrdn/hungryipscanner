@@ -21,7 +21,7 @@ network. It provides a GUI built with GTK 4 and Libadwaita to display active
 hosts on the network.
 
 %prep
-%setup -q
+%autosetup -n HungryIPScanner-main
 
 %build
 # Nothing to build, just python scripts
