@@ -38,5 +38,5 @@ hosts on the network.
 %{_datadir}/icons/hicolor/scalable/apps/hungryipscannerlogo.svg
 
 %changelog
-* Sat May 25 2025 Julien Grondin - 1.0-1
+* Mon Dec 01 2025 Julien Grondin - 1.0-1
 - Initial package
