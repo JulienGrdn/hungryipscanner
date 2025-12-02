@@ -59,3 +59,4 @@ EOF
 
 %changelog
 * Mon Dec 01 2025 Julien Grondin - 1.0-2
+- Initial COPR build
