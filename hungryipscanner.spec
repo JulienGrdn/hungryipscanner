@@ -21,24 +21,21 @@ network. It provides a GUI built with GTK 4 and Libadwaita to display active
 hosts on the network.
 
 %prep
-# NOTE: Ensure this matches your GitHub repo casing (hungryipscanner vs HungryIPScanner)
 %autosetup -n hungryipscanner-main
 
 %build
 # Nothing to build for a pure Python script
 
 %install
-# 1. Install the main script with EXECUTABLE permissions (This fixes your error)
+# 1. Install the main script
 mkdir -p %{buildroot}%{_bindir}
 install -m 0755 hungryipscanner.py %{buildroot}%{_bindir}/hungryipscanner
 
 # 2. Install the icon
-# We verify the source filename is 'hungryipscannerlogo.svg' and rename it to standard 'hungryipscanner.svg'
 mkdir -p %{buildroot}%{_datadir}/icons/hicolor/scalable/apps
-install -m 0644 hungryipscannerlogo.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/hungryipscanner.svg
+install -m 0644 hungryipscanner.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/hungryipscanner.svg
 
-# 3. Create a Desktop Entry manually
-# This ensures Exec and Icon names match exactly what we installed above
+# 3. Create a Desktop Entry so it appears in the App Menu
 mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/hungryipscanner.desktop <<EOF
 [Desktop Entry]
@@ -48,8 +45,8 @@ Exec=hungryipscanner
 Icon=hungryipscanner
 Terminal=false
 Type=Application
-Categories=Utility;Network;GTK;
-StartupWMClass=hungryipscanner
+Categories=Utility;Office;GTK;Network;
+StartupWMClass=com.github.juliengrdn.hungryipscanner
 StartupNotify=true
 EOF
 
