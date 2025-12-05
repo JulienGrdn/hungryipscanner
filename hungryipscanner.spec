@@ -1,6 +1,6 @@
 Name:           hungryipscanner
 Version:        1.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        A simple utility for scanning IP addresses over the local network
 License:        MIT
 URL:            https://github.com/JulienGrdn/hungryipscanner
@@ -58,5 +58,5 @@ EOF
 %{_datadir}/icons/hicolor/scalable/apps/hungryipscanner.svg
 
 %changelog
-* Mon Dec 01 2025 Julien Grondin - 1.0-2
+* Mon Dec 01 2025 Julien Grondin - 1.0-3
 - Initial COPR build
