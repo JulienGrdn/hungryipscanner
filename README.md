@@ -3,6 +3,7 @@
 A simple utility for scanning IP addresses over the local network. Hungry IP Scanner allows you to quickly discover active devices on your subnet, view their ping times, and resolve hostnames.
 
 ![Hungry IP Scanner](hungryipscanner.svg)
+
 Vectors and icons by <a href="https://www.svgrepo.com" target="_blank">SVG Repo</a>
 
 ## Features
